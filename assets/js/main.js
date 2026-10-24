@@ -136,7 +136,7 @@ jQuery(function($){
 
 	var $container = $('.isotope');
 
-	win.load(function() {
+	win.on("load",function() {
         $container.isotope({
 	      itemSelector: '.work-item'
  		});
@@ -212,7 +212,7 @@ jQuery(function($){
 
 	var $container = $('.isotope');
 
-	win.load(function() {
+	win.on("load",function() {
 
 	    $container.isotope({
 	      itemSelector: '.work-item'
