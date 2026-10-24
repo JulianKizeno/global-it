@@ -152,7 +152,7 @@
 					var slidePrev = base.el+' li:eq('+loadPrev+')';
 					imgPrev.appendTo(slidePrev).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading prevslide');
 				
-					imgPrev.load(function(){
+					imgPrev.on("load",function(){
 						$(this).data('origWidth', $(this).width()).data('origHeight', $(this).height());
 						base.resizeNow();	// Resize background image
 					});	// End Load
@@ -169,7 +169,7 @@
 			var slideCurrent= base.el+' li:eq('+vars.current_slide+')';
 			img.appendTo(slideCurrent).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading activeslide');
 			
-			img.load(function(){
+			img.on("load",function(){
 				base._origDim($(this));
 				base.resizeNow();	// Resize background image
 				base.launch();
@@ -185,7 +185,7 @@
 				var slideNext = base.el+' li:eq('+loadNext+')';
 				imgNext.appendTo(slideNext).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading');
 				
-				imgNext.load(function(){
+				imgNext.on("load",function(){
 					$(this).data('origWidth', $(this).width()).data('origHeight', $(this).height());
 					base.resizeNow();	// Resize background image
 				});	// End Load
@@ -499,7 +499,7 @@
 				
 				img.appendTo(targetList).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading').css('visibility','hidden');
 				
-				img.load(function(){
+				img.on("load",function(){
 					base._origDim($(this));
 					base.resizeNow();
 				});	// End Load
@@ -603,7 +603,7 @@
 				
 				img.appendTo(targetList).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading').css('visibility','hidden');
 				
-				img.load(function(){
+				img.on("load",function(){
 					base._origDim($(this));
 					base.resizeNow();
 				});	// End Load
@@ -784,7 +784,7 @@
 					
 					img.appendTo(targetList).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading').css('visibility','hidden');
 					
-					img.load(function(){
+					img.on("load",function(){
 						base._origDim($(this));
 						base.resizeNow();
 					});	// End Load
@@ -807,7 +807,7 @@
 					
 					img.appendTo(targetList).wrap('<a ' + imageLink + linkTarget + '></a>').parent().parent().addClass('image-loading').css('visibility','hidden');
 					
-					img.load(function(){
+					img.on("load",function(){
 						base._origDim($(this));
 						base.resizeNow();
 					});	// End Load
