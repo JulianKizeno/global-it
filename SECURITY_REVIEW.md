@@ -13,7 +13,7 @@ Sin manifiesto npm aplicable; la revisión de bibliotecas vendorizadas se descri
 
 ## Verificación
 
-- Chromium: mobile navigation opens/closes, content collapse opens, jQuery prototype-pollution regression, no page script errors; correctos.
+- Chromium: mobile navigation opens/closes, content collapse opens, carousel indicator changes slide, jQuery prototype-pollution regression, no page script errors; correctos.
 
 ## Límites y configuración
 
